@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login &amp; Cadastro</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login</div>
+    <div class="title signup">Cadastro</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Registrar</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="#" class="login">
+        <div class="field">
+          <input type="text" placeholder="Endereço de email" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Senha" required>
+        </div>
+        <div class="pass-link"><a href="#">Esqueceu a senha?</a></div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Entrar">
+        </div>
+      </form>
+      <form action="script.php" class="signup" method="post">
+        <div class="field">
+          <input type="text" placeholder="Endereço de email" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Senha" required>
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Confirme a sua senha" required>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Criar conta">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
